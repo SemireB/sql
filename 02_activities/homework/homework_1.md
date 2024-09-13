@@ -78,4 +78,4 @@ Please do not pick the exact same tables that I have already diagramed. For exam
 
 # MY SUBMISSION FOR LOGICAL DATA MODEL - IMAGE
 
-![homework_1_submission.png](./02_activities/homework/images/homework_1_submission.png)
+![homework_1_submission.png](https://github.com/SemireB/sql/blob/Homeworks/02_activities/homework/images/homework_1_submission.png)
