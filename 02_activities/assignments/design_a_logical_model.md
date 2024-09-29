@@ -19,8 +19,11 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
-```
+Type 1 is the architecture that would overwrite changes to the customer address table. Whenever a customer updates their address, the existing address is updated with the new address and the history of the previous address is deleted.
+
+Type 2 is the architecture that would retain changes to the customer address table. Whenever a customer updates their address, a new record is inserted into the table with the new address and the history of the previous adress is kept with the effective date showing inactive for the old record and active for the new record.
+
+With type 2 where changes are retained there are higher privacy implications due to the amount of personal data collected over time in the stored history.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
