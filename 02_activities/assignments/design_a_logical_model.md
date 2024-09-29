@@ -1,4 +1,5 @@
 # Assignment 1: Design a Logical Model
+### Name: Semire Bamikole
 
 ## Question 1
 Create a logical model for a small bookstore. 📚
@@ -9,6 +10,7 @@ At the minimum it should have employee, order, sales, customer, and book entitie
 
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+![assignment_1_ERD_2.png](https://github.com/SemireB/sql/blob/Assignment/02_activities/homework/images/assignment_1_ERD_2.png)
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
