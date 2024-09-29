@@ -53,7 +53,7 @@ where product_qty_type = 'unit'
 This can be any product you desire (e.g. add another record for Apple Pie). */
 
 insert into product_units
-VALUES (8,'Cherry Pie2',	'10"',3	, 'unit', '2024-09-28 16:30:00')
+VALUES (8,'Cherry Pie2','10"',3	, 'unit', '2024-09-28 16:30:00')
 
 
 -- DELETE
