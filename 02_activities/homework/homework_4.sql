@@ -33,7 +33,7 @@ each new market date for each customer, or select only the unique market dates p
 (without purchase details) and number those visits. 
 HINT: One of these approaches uses ROW_NUMBER() and one uses DENSE_RANK(). */
 
-  SELECT
+SELECT
 customer_id, 
 market_date,
 row_number () OVER (PARTITION by customer_id order by market_date) as visit_number
@@ -48,12 +48,12 @@ SELECT *
 
 FROM  (
 
-		SELECT
-		customer_id, 
-		market_date,
-		row_number () OVER (PARTITION by customer_id order by market_date DESC) as visit_number
-		FROM customer_purchases
-		WHERE market_date is not NULL
+	SELECT
+	customer_id, 
+	market_date,
+	row_number () OVER (PARTITION by customer_id order by market_date DESC) as visit_number
+	FROM customer_purchases
+	WHERE market_date is not NULL
 		
 )
 			
